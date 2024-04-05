@@ -1,6 +1,6 @@
 module github.com/bjartek/mre-double-withdraw
 
-go 1.22.1
+go 1.22
 
 require (
 	cloud.google.com/go/compute v1.23.3 // indirect
@@ -228,3 +228,5 @@ require (
 	mvdan.cc/gofumpt v0.5.0 // indirect
 	rsc.io/tmplfunc v0.0.3 // indirect
 )
+
+replace github.com/bjartek/overflow/v2 => ../overflow

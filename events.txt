@@ -1,0 +1,41 @@
+
+
+ FlowToken.Vault  0x179 --4.2--> 0x179 --4.2-->  --3.2--> 0xf3
+                                                 --1  --> 0xf3
+
+A.ee82856bf20e2aa6.FungibleToken.Withdrawn
+         amount -> 4.2
+           from -> 0x179b6b1cb6755e31
+       fromUUID -> 19791209299970 //this is the main vault of that user, we can store that
+  withdrawnUUID -> 180319906955264
+           type -> A.0ae53cb6e3f42a79.FlowToken.Vault
+
+A.ee82856bf20e2aa6.FungibleToken.Withdrawn //this just puts it into a different place
+           type -> A.0ae53cb6e3f42a79.FlowToken.Vault
+         amount -> 4.2
+           from -> 0x179b6b1cb6755e31
+       fromUUID -> 180319906955264 
+  withdrawnUUID -> 180319906955265
+
+A.ee82856bf20e2aa6.FungibleToken.Withdrawn //this splits out 1
+         amount -> 1
+       fromUUID -> 180319906955265
+  withdrawnUUID -> 180319906955266
+           type -> A.0ae53cb6e3f42a79.FlowToken.Vault
+
+A.ee82856bf20e2aa6.FungibleToken.Deposited
+         toUUID -> 73667279060994 //this is the main uuid of this user we can store that
+  depositedUUID -> 180319906955265
+           type -> A.0ae53cb6e3f42a79.FlowToken.Vault
+         amount -> 3.2
+             to -> 0xf3fcd2c1a78f5eee
+
+A.ee82856bf20e2aa6.FungibleToken.Deposited
+           type -> A.0ae53cb6e3f42a79.FlowToken.Vault
+         amount -> 1
+             to -> 0xf3fcd2c1a78f5eee
+         toUUID -> 73667279060994
+  depositedUUID -> 180319906955266
+
+
+
